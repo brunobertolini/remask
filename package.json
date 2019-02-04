@@ -1,0 +1,61 @@
+{
+	"name": "remask",
+	"version": "0.0.0",
+	"license": "MIT",
+	"scripts": {
+		"lint": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write",
+		"dev": "microbundle watch --target browser --name remask",
+		"build": "microbundle build --target browser --name remask"
+	},
+	"main": "dist/index.js",
+	"umd:main": "dist/index.umd.js",
+	"module": "dist/index.m.js",
+	"source": "src/index.js",
+	"files": [
+		"dist/",
+		"package.json",
+		"README.md"
+	],
+	"author": {
+		"name": "Bruno Bertolini",
+		"email": "dev@brunobertolini.com",
+		"url": "http://brunobertolini.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brunobertolini/remask"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional",
+			"@commitlint/config-lerna-scopes"
+		]
+	},
+	"lint-staged": {
+		"*.{{js,jsx,mjs,ts,tsx,md,mdx}}": [
+			"yarn packages:lint",
+			"git add"
+		]
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^7.2.1",
+		"@commitlint/config-conventional": "^7.1.2",
+		"@commitlint/config-lerna-scopes": "^7.3.1",
+		"husky": "^1.2.1",
+		"lerna": "^3.10.7",
+		"lint-staged": "^8.1.0",
+		"microbundle": "^0.9.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^1.15.3",
+		"standard-version": "^4.4.0"
+	},
+	"dependencies": {
+		"vanilla-masker": "^1.2.0"
+	}
+}
