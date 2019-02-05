@@ -11,8 +11,13 @@ const intl = {
 }
 
 const patterns = {
-	currency: (value, { language = window.navigator.language, ...options }) =>
-		Number(parseFloat(value).toFixed(2) / 100).toLocaleString(language, {
+	currency: (
+		value,
+		{ language, ...options } = { language: window.navigator.language }
+	) =>
+		Number(
+			parseFloat(value.indexOf('.') > -1 ? value : value / 100).toFixed(2)
+		).toLocaleString(language, {
 			style: 'currency',
 			currency: intl[language]
 				? intl[language].currency
