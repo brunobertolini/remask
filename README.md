@@ -1,4 +1,4 @@
-# reMask
+# Remask
 
 A multi-mask lib
 

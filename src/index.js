@@ -16,13 +16,24 @@ const patterns = {
 		{ language, ...options } = { language: window.navigator.language }
 	) =>
 		Number(
-			parseFloat(value.indexOf('.') > -1 ? value : value / 100).toFixed(2)
+			parseFloat(value.indexOf('.') > -1 ? value : value / 100)
 		).toLocaleString(language, {
 			style: 'currency',
 			currency: intl[language]
 				? intl[language].currency
 				: intl.fallback.currency,
 			currencyDisplay: 'symbol',
+			minimumFractionDigits: 2,
+			...options,
+		}),
+
+	percent: (
+		value,
+		{ language, ...options } = { language: window.navigator.language }
+	) =>
+		Number(parseFloat(value)).toLocaleString(language, {
+			style: 'percent',
+			minimumFractionDigits: 2,
 			...options,
 		}),
 }
