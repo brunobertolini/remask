@@ -31,7 +31,9 @@ const patterns = {
 		value,
 		{ language, ...options } = { language: window.navigator.language }
 	) =>
-		Number(parseFloat(value)).toLocaleString(language, {
+		Number(
+			parseFloat(value.indexOf('.') > -1 ? value : value / 100)
+		).toLocaleString(language, {
 			style: 'percent',
 			minimumFractionDigits: 2,
 			...options,
