@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-alpha.5"></a>
+
+# [0.1.0-alpha.5](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2019-03-08)
+
+### Bug Fixes
+
+- percent mask ([db82274](https://github.com/brunobertolini/remask/commit/db82274))
+
 <a name="0.1.0-alpha.4"></a>
 
 # [0.1.0-alpha.4](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2019-03-07)
