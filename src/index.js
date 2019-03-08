@@ -27,17 +27,12 @@ const patterns = {
 			...options,
 		}),
 
-	percent: (
-		value,
-		{ language, ...options } = { language: window.navigator.language }
-	) =>
-		Number(
-			parseFloat(value.indexOf('.') > -1 ? value : value / 100)
-		).toLocaleString(language, {
-			style: 'percent',
-			minimumFractionDigits: 2,
-			...options,
-		}),
+	percent: value =>
+		value &&
+		`${parseFloat(value)
+			.toFixed(2)
+			.replace('.', ',')
+			.replace(/(\d)(?=(\d{3})+,)/g, '$1.')} %`,
 }
 
 export const unMask = (value, pattern) =>
