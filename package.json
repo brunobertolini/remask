@@ -6,11 +6,12 @@
 	"umd:main": "dist/index.umd.js",
 	"module": "dist/index.m.js",
 	"source": "src/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"test": "jest",
 		"lint": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write",
 		"dev": "microbundle watch --target browser --name remask",
-		"build": "microbundle build --target browser --name remask",
+		"build": "microbundle build --target browser --name remask & tsc",
 		"release": "standard-version",
 		"prerelease": "yarn test && yarn build"
 	},
@@ -49,6 +50,7 @@
 		"@babel/preset-env": "^7.7.4",
 		"@commitlint/cli": "^8.2.0",
 		"@commitlint/config-conventional": "^8.2.0",
+		"@types/vanilla-masker": "^1.2.1",
 		"babel": "^6.23.0",
 		"babel-cli": "^6.26.0",
 		"babel-jest": "^24.9.0",
@@ -57,7 +59,8 @@
 		"lint-staged": "^9.5.0",
 		"microbundle": "^0.11.0",
 		"prettier": "^1.19.1",
-		"standard-version": "^7.0.1"
+		"standard-version": "^7.0.1",
+		"typescript": "^4.7.3"
 	},
 	"dependencies": {
 		"vanilla-masker": "^1.2.0"
