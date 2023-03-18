@@ -1,3 +1,5 @@
+[![.github/workflows/ci.yml](https://github.com/brunobertolini/remask/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/brunobertolini/remask/actions/workflows/ci.yml)
+
 <h1 align="center">
   <img src="logo.png" alt="reMask" />
 </h1>
