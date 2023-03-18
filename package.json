@@ -13,7 +13,8 @@
 		"dev": "microbundle watch --target browser --name remask",
 		"build": "microbundle build --target browser --name remask & tsc",
 		"release": "standard-version",
-		"prerelease": "yarn test && yarn build"
+		"prerelease": "yarn test && yarn build",
+		"prepare": "husky install"
 	},
 	"files": [
 		"dist/",
@@ -29,40 +30,21 @@
 		"type": "git",
 		"url": "https://github.com/brunobertolini/remask"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-		}
-	},
-	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		]
-	},
-	"lint-staged": {
-		"*.{{js,jsx,mjs,ts,tsx,md,mdx}}": [
-			"yarn lint",
-			"git add"
-		]
-	},
 	"devDependencies": {
 		"@babel/plugin-proposal-optional-chaining": "^7.21.0",
-		"@babel/preset-env": "^7.7.4",
+		"@babel/preset-env": "^7.20.2",
 		"@babel/preset-typescript": "^7.21.0",
-		"@commitlint/cli": "^8.2.0",
-		"@commitlint/config-conventional": "^8.2.0",
+		"@commitlint/cli": "^17.4.4",
+		"@commitlint/config-conventional": "^17.4.4",
 		"babel": "^6.23.0",
 		"babel-cli": "^6.26.0",
-		"babel-jest": "^24.9.0",
-		"husky": "^3.1.0",
-		"jest": "^24.9.0",
-		"lint-staged": "^9.5.0",
-		"microbundle": "^0.11.0",
-		"prettier": "^1.19.1",
-		"standard-version": "^7.0.1",
-		"typescript": "^4.7.3"
-	},
-	"dependencies": {},
-	"peerDependencies": {}
+		"babel-jest": "^29.5.0",
+		"husky": "^8.0.3",
+		"jest": "^29.5.0",
+		"lint-staged": "^13.2.0",
+		"microbundle": "^0.15.1",
+		"prettier": "^2.8.4",
+		"standard-version": "^9.5.0",
+		"typescript": "^5.0.2"
+	}
 }
