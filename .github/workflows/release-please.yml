@@ -2,8 +2,7 @@ name: Generate release
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "master" ]
 
 permissions:
   contents: write
