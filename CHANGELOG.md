@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/brunobertolini/remask/compare/v1.0.0...v1.0.1) (2023-03-19)
+
+
+### Documentation
+
+* update readme lib description ([bccb07d](https://github.com/brunobertolini/remask/commit/bccb07d24fc80303ee07f0ece32b164c5eca520c))
+
 ## [1.0.0](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.5...v1.0.0) (2023-03-19)
 
 
