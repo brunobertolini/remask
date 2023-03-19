@@ -4,12 +4,12 @@
   <img src="logo.png" alt="reMask" />
 </h1>
 
-> A multi-mask lib
+> A lightweight, dependency free and framework agnostic multi-mask lib, with Typescript support.
 
 ## Install
 
 ```
-yarn add vanilla-masker remask
+yarn add remask
 ```
 
 ## Usage
