@@ -1,10 +1,27 @@
-# Change Log
+# Changelog
+
+## [1.0.0](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.5...v1.0.0) (2023-03-19)
+
+
+### Features
+
+* add typescript suport ([845277d](https://github.com/brunobertolini/remask/commit/845277d2595a3b19e461982f29f3aadd3471a168))
+* create our own masker funcntion and remove deps ([aaec8d6](https://github.com/brunobertolini/remask/commit/aaec8d6e339a4b8f74e6a06cebc8c2e589c87a50))
+* setup gtihub actions instead of travis.ci ([cacde5f](https://github.com/brunobertolini/remask/commit/cacde5f4d7650bc4f94aff9c8f4b7755ba57c2b0))
+* update dependencies and reconfigure some ([5dc13d4](https://github.com/brunobertolini/remask/commit/5dc13d4053c959af99b2a1d2c6bb1ea05bf6201a))
+
+
+### Miscellaneous Chores
+
+* add release-please and npm-publish action files ([ccb86f5](https://github.com/brunobertolini/remask/commit/ccb86f5de082cbc93163f500d52dd6fc208b35b7))
+
+## Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 <a name="0.1.0-alpha.5"></a>
 
-# [0.1.0-alpha.5](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2019-03-08)
+## [0.1.0-alpha.5](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2019-03-08)
 
 ### Bug Fixes
 
@@ -12,7 +29,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0-alpha.4"></a>
 
-# [0.1.0-alpha.4](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2019-03-07)
+## [0.1.0-alpha.4](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2019-03-07)
 
 ### Bug Fixes
 
@@ -20,7 +37,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0-alpha.3"></a>
 
-# [0.1.0-alpha.3](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.2...v0.1.0-alpha.3) (2019-03-07)
+## [0.1.0-alpha.3](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.2...v0.1.0-alpha.3) (2019-03-07)
 
 ### Features
 
@@ -28,7 +45,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0-alpha.2"></a>
 
-# [0.1.0-alpha.2](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2019-02-05)
+## [0.1.0-alpha.2](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2019-02-05)
 
 ### Bug Fixes
 
@@ -36,7 +53,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0-alpha.1"></a>
 
-# [0.1.0-alpha.1](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.0...v0.1.0-alpha.1) (2019-02-05)
+## [0.1.0-alpha.1](https://github.com/brunobertolini/remask/compare/v0.1.0-alpha.0...v0.1.0-alpha.1) (2019-02-05)
 
 ### Bug Fixes
 
@@ -44,7 +61,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0-alpha.0"></a>
 
-# 0.1.0-alpha.0 (2019-02-04)
+## 0.1.0-alpha.0 (2019-02-04)
 
 ### Features
 
