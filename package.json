@@ -7,7 +7,7 @@
 	"types": "dist/index.d.ts",
 	"sideEffects": false,
 	"scripts": {
-		"test": "vitest",
+		"test": "vitest run",
 		"test:ui": "vitest --ui --api 9527",
 		"test:coverage": "vitest run --coverage",
 		"lint": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write",
