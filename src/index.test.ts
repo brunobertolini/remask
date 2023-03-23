@@ -1,4 +1,5 @@
 import { mask, unMask } from '.'
+import { test, expect } from 'vitest'
 
 test('should mask correctly', () => {
 	const result = mask('123', '9.9.9')
@@ -35,6 +36,6 @@ test('should stop masking when char not match mask and avoid ends with symbol', 
 	expect(result).toEqual('1-2')
 })
 
-test('should keep mask non pattern char on value', function() {
+test('should keep mask non pattern char on value', () => {
 	expect(mask('+55 (48) 888-8', '+55 (99) 999-9999')).toEqual('+55 (48) 888-8')
 })
