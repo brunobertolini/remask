@@ -27,7 +27,7 @@ export const masker = (
 	let valueIndex = 0
 
 	for (let i = 0; i < patternCharList.length; i++) {
-		const patternChar = pattern[i]
+		const patternChar = pattern[i] as string
 		const valueChar = unmaskedValue[valueIndex]
 		const regex = regexMap[patternChar]
 
@@ -55,7 +55,7 @@ export const masker = (
 
 		if (
 			output.length < patternCharList.length &&
-			/\W/.test(output[output.length - 1])
+			/\W/.test(output[output.length - 1] as string)
 		) {
 			output.pop()
 		}
@@ -74,9 +74,10 @@ const multimasker = (
 	masker(
 		value,
 		patterns.reduce(
-			(memo, pattern) => (value.length <= unMask(memo).length ? memo : pattern),
+			(memo, pattern) =>
+				value.length <= unMask(memo as string).length ? memo : pattern,
 			patterns[0]
-		),
+		) as string,
 		options
 	)
 
