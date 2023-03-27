@@ -40,6 +40,6 @@ test('should keep mask non pattern char on value', () => {
 	expect(mask('+55 (48) 888-8', '+55 (99) 999-9999')).toEqual('+55 (48) 888-8')
 })
 
-test('should return empty value when pattern is empty', function () {
+test('should return empty value when pattern is empty', () => {
 	expect(mask('+55 (48) 888-8', '')).toEqual('')
 })
