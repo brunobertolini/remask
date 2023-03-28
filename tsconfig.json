@@ -1,12 +1,22 @@
 {
 	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
+		"target": "ESNext",
+		"allowJs": true,
+		"skipLibCheck": true,
 		"strict": true,
-		"declaration": true,
-		"outDir": "./dist",
-		"skipLibCheck": true
+		"noEmit": true,
+		"noUncheckedIndexedAccess": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": false,
+		"esModuleInterop": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"baseUrl": "."
 	},
-	"include": ["./src"],
-	"exclude": ["node_modules/**/*", "**/*.test.js", "**/*.test.ts"]
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }
