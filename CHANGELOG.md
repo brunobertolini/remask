@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/brunobertolini/remask/compare/v1.0.1...v1.1.0) (2023-05-04)
+
+
+### Features
+
+* add rollup to build esm/umd/cjs modules ([b51b45e](https://github.com/brunobertolini/remask/commit/b51b45ef3cc1d388748df01f5c2f626aadc1e6f9))
+
 ## [1.0.1](https://github.com/brunobertolini/remask/compare/v1.0.0...v1.0.1) (2023-03-19)
 
 
