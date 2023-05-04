@@ -3,10 +3,12 @@
 	"version": "1.0.1",
 	"license": "MIT",
 	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"browser": "dist/index.umd.js",
 	"scripts": {
 		"test": "jest",
 		"lint": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write",
-		"build": "rm -Rf dist && yarn tsc",
+		"build": "rm -Rf dist && yarn rollup -c",
 		"prerelease": "yarn test && yarn build",
 		"prepare": "husky install"
 	},
@@ -31,6 +33,7 @@
 		"@babel/preset-typescript": "^7.21.0",
 		"@commitlint/cli": "^17.4.4",
 		"@commitlint/config-conventional": "^17.4.4",
+		"@rollup/plugin-typescript": "^11.1.0",
 		"babel": "^6.23.0",
 		"babel-cli": "^6.26.0",
 		"babel-jest": "^29.5.0",
@@ -39,6 +42,7 @@
 		"lint-staged": "^13.2.0",
 		"microbundle": "^0.15.1",
 		"prettier": "^2.8.4",
+		"rollup": "^3.21.4",
 		"standard-version": "^9.5.0",
 		"typescript": "^5.0.2"
 	}
