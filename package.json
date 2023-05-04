@@ -27,6 +27,13 @@
 		"type": "git",
 		"url": "https://github.com/brunobertolini/remask"
 	},
+	"keywords": [
+		"mask",
+		"input mask",
+		"generic mask",
+		"regex mask",
+		"multiple mask"
+	],
 	"devDependencies": {
 		"@babel/plugin-proposal-optional-chaining": "^7.21.0",
 		"@babel/preset-env": "^7.20.2",
