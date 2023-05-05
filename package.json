@@ -41,6 +41,7 @@
 		"@commitlint/cli": "^17.4.4",
 		"@commitlint/config-conventional": "^17.4.4",
 		"@rollup/plugin-typescript": "^11.1.0",
+		"@types/jest": "^29.5.1",
 		"babel": "^6.23.0",
 		"babel-cli": "^6.26.0",
 		"babel-jest": "^29.5.0",
@@ -52,5 +53,8 @@
 		"rollup": "^3.21.4",
 		"standard-version": "^9.5.0",
 		"typescript": "^5.0.2"
+	},
+	"dependencies": {
+		"@types/intl": "^1.2.0"
 	}
 }
