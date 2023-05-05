@@ -1,4 +1,4 @@
-import { mask, unMask } from '.'
+import { mask, unMask } from './'
 
 test('should mask correctly', () => {
 	const result = mask('123', '9.9.9')
