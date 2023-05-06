@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/brunobertolini/remask/compare/v1.1.0...v1.2.0) (2023-05-06)
+
+
+### Features
+
+* currency mask/unmask ([8ab42e7](https://github.com/brunobertolini/remask/commit/8ab42e7ef03e9a7a4d562f6a106fa2d9f0b4be0e))
+
+
+### Bug Fixes
+
+* placeholder char not removed with unmask function ([9665ac3](https://github.com/brunobertolini/remask/commit/9665ac3d94d70898c62a9d05544c7eac62ca8d40))
+
 ## [1.1.0](https://github.com/brunobertolini/remask/compare/v1.0.1...v1.1.0) (2023-05-04)
 
 
