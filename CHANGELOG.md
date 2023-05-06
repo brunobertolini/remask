@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/brunobertolini/remask/compare/v1.2.1...v1.2.2) (2023-05-06)
+
+
+### Bug Fixes
+
+* decimal parse for multiple currencies with different decimal chars ([c5e139b](https://github.com/brunobertolini/remask/commit/c5e139b012cc83a2131dbe46692fa7d026422a92))
+
 ## [1.2.1](https://github.com/brunobertolini/remask/compare/v1.2.0...v1.2.1) (2023-05-06)
 
 
