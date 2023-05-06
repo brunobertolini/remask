@@ -1,4 +1,4 @@
 import * as currency from './currency'
 
-export * from './masker'
-export { currency }
+import { mask, unmask, unMask } from './masker'
+export { currency, mask, unMask, unmask }

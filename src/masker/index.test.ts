@@ -1,4 +1,4 @@
-import { mask, unMask, unmask } from './'
+import { mask, unmask } from './'
 
 test('should mask correctly', () => {
 	const result = mask('123', '9.9.9')
@@ -11,7 +11,7 @@ test('should mask correctly with alphanumeric chars', () => {
 })
 
 test('should remove mask correctly', () => {
-	const result = unMask(mask('123', '9.9.9'))
+	const result = unmask(mask('123', '9.9.9'))
 	expect(result).toEqual('123')
 })
 
