@@ -1,5 +1,8 @@
 const typescript = require('@rollup/plugin-typescript')
+const { nodeResolve } = require('@rollup/plugin-node-resolve')
+
 const pkg = require('./package.json')
+const tsConfig = require('./tsconfig.json')
 
 module.exports = [
 	{
@@ -13,6 +16,6 @@ module.exports = [
 			{ file: pkg.main, format: 'cjs' },
 			{ file: pkg.module, format: 'es' },
 		],
-		plugins: [typescript()],
+		plugins: [nodeResolve(), typescript()],
 	},
 ]

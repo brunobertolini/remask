@@ -2,11 +2,12 @@
 	"compilerOptions": {
 		"lib": ["ES2022"],
 		"target": "esnext",
-		"module": "commonjs",
+		"module": "esnext",
 		"strict": true,
 		"declaration": true,
 		"outDir": "./dist",
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"moduleResolution": "bundler"
 	},
 	"include": ["./src"],
 	"exclude": ["node_modules/**/*", "**/*.test.js", "**/*.test.ts"]
