@@ -13,7 +13,7 @@ const regexMap: RegExpMapProps = {
 	S: new RegExp(/[0-9a-zA-Z]/),
 }
 
-export const unmask = (value: string) => value.replace(/\W/g, '')
+export const unmask = (value: string) => value.replace(/[^0-9a-zA-Z]/g, '')
 export const unMask = unmask
 
 export const masker = (
