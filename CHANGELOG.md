@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/brunobertolini/remask/compare/v1.2.0...v1.2.1) (2023-05-06)
+
+
+### Bug Fixes
+
+* bundle config ([5e05a64](https://github.com/brunobertolini/remask/commit/5e05a64d870b4f8e29e6c8730815392a070c1dda))
+
 ## [1.2.0](https://github.com/brunobertolini/remask/compare/v1.1.0...v1.2.0) (2023-05-06)
 
 
