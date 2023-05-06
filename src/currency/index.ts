@@ -4,6 +4,12 @@ interface CurrncyMaskProps {
 	value: number | bigint
 }
 
+interface CurrncyUnmaskProps {
+	locale: string | string[]
+	currency: string
+	value: string
+}
+
 export const mask = ({ locale, currency, value }: CurrncyMaskProps): string => {
 	const { format } = new Intl.NumberFormat(`${locale}`, {
 		style: 'currency',
@@ -13,25 +19,18 @@ export const mask = ({ locale, currency, value }: CurrncyMaskProps): string => {
 	return format(value)
 }
 
-export const unmask = ({
-	locale,
-	currency,
-	value,
-}: CurrncyMaskProps): number => {
+export const unmask = ({ locale, currency, value }: CurrncyUnmaskProps) => {
 	const formatter = new Intl.NumberFormat(locale, {
 		style: 'currency',
 		currency,
 	})
 
-	const decimalPart = formatter
-		.formatToParts(1.1)
-		.find((item) => item.type === 'decimal')
+	const unformatted = `${value}`.replace(/[^0-9\-]/g, '')
 
-	const decimalSeparator = decimalPart ? decimalPart.value : false
-	const regex = new RegExp(`[^\-0-9${decimalSeparator}]`, 'g')
-	const unformatted = `${value}`.replace(regex, '')
+	const parts = formatter.formatToParts(1.1)
+	const fractionPart = parts.find((item) => item.type === 'fraction')
 
-	return decimalSeparator && decimalSeparator !== '.'
-		? parseFloat(unformatted.replace(decimalSeparator, '.'))
-		: parseFloat(unformatted)
+	return fractionPart
+		? parseInt(unformatted) / (parseInt(fractionPart.value) * 10)
+		: parseInt(unformatted)
 }

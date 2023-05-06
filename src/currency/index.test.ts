@@ -182,4 +182,14 @@ describe.only('unmask', () => {
 
 		expect(result).toEqual(1234)
 	})
+
+	test('should remove format 1.234,567 (number) to KWD 1234.567', () => {
+		const result = unmask({
+			locale: 'pt-BR',
+			currency: 'KWD',
+			value: 'KWD 1.234,567',
+		})
+
+		expect(result).toEqual(1234.567)
+	})
 })
