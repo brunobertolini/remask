@@ -1,16 +1,20 @@
-interface CurrncyMaskProps {
+interface CurrencyMaskProps {
 	locale: string | string[]
 	currency: string
 	value: number | bigint
 }
 
-interface CurrncyUnmaskProps {
+interface CurrencyUnmaskProps {
 	locale: string | string[]
 	currency: string
 	value: string
 }
 
-export const mask = ({ locale, currency, value }: CurrncyMaskProps): string => {
+export const mask = ({
+	locale,
+	currency,
+	value,
+}: CurrencyMaskProps): string => {
 	const { format } = new Intl.NumberFormat(`${locale}`, {
 		style: 'currency',
 		currency,
@@ -19,7 +23,7 @@ export const mask = ({ locale, currency, value }: CurrncyMaskProps): string => {
 	return format(value)
 }
 
-export const unmask = ({ locale, currency, value }: CurrncyUnmaskProps) => {
+export const unmask = ({ locale, currency, value }: CurrencyUnmaskProps) => {
 	const formatter = new Intl.NumberFormat(locale, {
 		style: 'currency',
 		currency,
